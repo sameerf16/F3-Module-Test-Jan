@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Time Zone</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="upper-container">
+            <h2>TimeZone API</h2>
+            <h2>Your Current Time Zone</h2>
+            <div class="current-location">
+                <ul id="current-data">
+                    <li>Name of Time Zone:</li>
+                    <li>Lat: <span>Long:</span></li>
+                    <li>Offset STD:</li>
+                    <li>Offset STD Seconds:</li>
+                    <li>Offset DST:</li>
+                    <li>Offset DST Seconds:</li>
+                    <li>Country:</li>
+                    <li>Postcode:</li>
+                    <li>City:</li>
+                </ul>
+            </div>
+        </div>
+        <div class="lower-container">
+            <div class="search">
+                <h3>Enter Address</h3>
+                <input type="text" placeholder="Address" id="add">
+                <button type="button" onclick="showResult()">Submit</button>
+            </div>
+            <div class="result" id="result">
+                <p>Your result</p>
+                <div class="show-result">
+                    <ul id="res">
+                        <li>Name of Time Zone:</li>
+                        <li>Lat: <span class="move">Long:</span></li>
+                        <li>Offset STD:</li>
+                        <li>Offset STD Seconds:</li>
+                        <li>Offset DST:</li>
+                        <li>Offset DST Seconds:</li>
+                        <li>Country:</li>
+                        <li>Postcode:</li>
+                        <li>City:</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
